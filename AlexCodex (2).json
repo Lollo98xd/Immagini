@@ -1,0 +1,145 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "AlexCodex",
+				"abbreviation": "Ac",
+				"full": "AlexCodex",
+				"url": "",
+				"authors": [
+					"Alex"
+				],
+				"convertedBy": [
+					"alex"
+				]
+			}
+		],
+		"dateAdded": 1603318483,
+		"dateLastModified": 1603318483
+	},
+	"spell": [
+		{
+			"name": "Raven's call",
+			"source": "AlexCodex",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a raven's feather"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Four flocks of malevolent ravens fly out of your hair, from your robes or otherwise misteriously apperance.you can direct them at one target or several.make a ranged spell attack for each flock. on hit, the target takes {@damage 1d10} piercing damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"when you cast this spell usign a spell slot of 3rd level ro higher, you create one additional flock for each slot above 2nd"
+					]
+				}
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Hastur's melody",
+			"source": "AlexCodex",
+			"page": "96 miti di chtulhu",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"The caster sings a melody which enters in the target's mind draining the magic and sanity from within.",
+				"A creature in line of sight of the caster must succeeds a saving throw using the attribute that use to cast or intelligence if the creature it's not a caster.",
+				"If the creature fails loses the higher spell slot. Succeeding the save the creature loses the higher between a 3rd level or lower spell slot.",
+				"If the creature is not a caster takes {@damage 4d8} psychic damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell usign a spell slot of 4rd level or higher, if the target succeds the saving throw loses the higher between the spell slot level used to cast this spell or lower slot."
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"spellAttack": [
+				"O"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard,Cleric,Sorcerer,Wizard,Warlock,",
+						"source": "AlexCodex"
+					}
+				]
+			}
+		}
+	]
+}
