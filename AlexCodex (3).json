@@ -1,0 +1,3135 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "AlexCodex",
+				"abbreviation": "Ac",
+				"full": "AlexCodex",
+				"url": "",
+				"authors": [
+					"Alex"
+				],
+				"convertedBy": [
+					"alex"
+				]
+			}
+		],
+		"dateAdded": 1608472190,
+		"dateLastModified": 1608472190
+	},
+	"monster": [
+		{
+			"name": "Chomper",
+			"source": "AlexCodex",
+			"page": 0,
+			"size": "S",
+			"type": "fey",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 25,
+				"formula": "5d6 + 12"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 5
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 15,
+			"int": 8,
+			"wis": 10,
+			"cha": 10,
+			"senses": [
+				"tremorsense 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"thunder"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"cr": "1",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"the Chomper makes two Bite attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 3d6}) piercing damage plus 2 ({@damage 1d4}) poison damage."
+					]
+				},
+				{
+					"name": "Spores {@recharge 5}",
+					"entries": [
+						"the Chomper shakes his leafy head and emits spores, each creature within 5ft of it must pass a {@dc 13} constitution save or suffer from one of the following effects:",
+						"1) Sleep :  each creature affected by this attack falls {@condition unconscious} until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Undead and creatures immune to being {@condition charmed} aren't affected by this spell.",
+						"2) Blind :  each creature affected by this attack become {@condition blinded}",
+						"3) confusing :  An affected target can't take reactions and must roll a {@dice d10} at the start of each of its turns to determine its behavior for that turn. {@dice d10} Behavior 1 The creature uses all its movement to move in a random direction. To determine the direction, roll a {@dice d8} and assign a direction to each die face. The creature doesn't take an action this turn. 2-6 The creature doesn't move or take actions this turn. 7-8 The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn. 9-10 The creature can act and move normally. At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.",
+						"4) darkness : the Chomper cast {@spell Darkness} centered on him"
+					]
+				},
+				{
+					"name": "Image",
+					"entries": [
+						"https://cdnb.artstation.com/p/assets/images/images/012/538/169/large/ricardo-tome-ricardo-tome-chomper.jpg?1535303984"
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill",
+				"swamp"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdnb.artstation.com/p/assets/images/images/012/538/169/large/ricardo-tome-ricardo-tome-chomper.jpg?1535303984"
+						}
+					}
+				]
+			},
+			"tokenUrl": "http://dndtojson.altervista.org/chomper.png",
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "False hydra",
+			"shortName": true,
+			"alias": [
+				"Hydra",
+				"false",
+				"wtf",
+				"memory"
+			],
+			"source": "AlexCodex",
+			"size": "H",
+			"type": "monstrosity",
+			"alignment": [
+				{
+					"alignment": [
+						"N",
+						"E"
+					]
+				}
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d12 + 80",
+				"average": 140
+			},
+			"speed": {
+				"walk": 20,
+				"burrow": 10
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 20,
+			"int": 12,
+			"wis": 13,
+			"cha": 13,
+			"save": {
+				"con": "+8",
+				"wis": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"conditionImmune": [
+				"prone"
+			],
+			"languages": [
+				"understands languages known by its victims",
+				"but can't speak",
+				"telepathy 5 miles"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Multiple Heads",
+					"entries": [
+						"The false hydra has seven heads. While it has more than one head, the false hydra has advantage on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}. Whenever the false hydra takes 25 or more damage in a single turn, one of its heads dies. If all its heads die, the false hydra dies. At the end of its turn, it grows a head for each of its heads that died since its last turn, unless it has regrown 8 heads. The false hydra regains 10 hit points for each head regrown in this way."
+					]
+				},
+				{
+					"name": "Reactive Heads",
+					"entries": [
+						"For each head the hydra has beyond one, it gets an extra reaction that can be used only for opportunity attacks."
+					]
+				},
+				{
+					"name": "Horrific Appearance",
+					"entries": [
+						"Any humanoid that starts its turn within 30 feet of the Hydra and can see the Hydra's form must make a {@dc 14} Wisdom saving throw.On a failed save, the creature is {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the Hydra is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hag's Horrific Appearance for the next 24 hours.",
+						"Unless the target is surprised or the revelation of the Hydra's form is sudden, the target can avert its eyes and avoid making the initial saving throw. Until the start of its next turn, a creature that averts its eyes has disadvantage on attack rolls against the Hydra."
+					]
+				},
+				{
+					"name": "wakeful",
+					"entries": [
+						"While the hydra sleeps, at least one of its heads is awake."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hydra makes as many bite attacks as it has heads."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 20 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage.If the target is a creature, it is {@condition grappled} (escape {@dc 15}) and the head that made the attack can't bite another target. "
+					]
+				},
+				{
+					"name": "Swallow",
+					"entries": [
+						". The false hydra makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the false hydra, and it takes 7 ({@damage 2d6}) acid damage at the start of each of the false hydra's turns. If the false hydra takes 25 damage or more on a single turn from a creature inside it, the false hydra must succeed on a {@dc 15} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the false hydra. If the false hydra dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 15 feet of movement, exiting {@condition prone}. The false hydra can have a maximum of 2 medium, 4 small, or 16 tiny creatures swallowed at any given time."
+					]
+				},
+				{
+					"name": "Sightless Song",
+					"entries": [
+						"The young false hydra emits a horrible, nightmarish howl to all creatures within 1 mile. Any humanoid that can hear this song is incapable of noticing the young false hydra while it hears it. Humanoids under the effect of the song do not realize they can hear the song. The young false hydra can continue to sing the song for as long as it wants, but must stop singing if it makes a Bite attack."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Advance",
+					"entries": [
+						"The false hydra moves up to 20 feet towards a hostile creature"
+					]
+				},
+				{
+					"name": "detect",
+					"entries": [
+						"The false hydra makes a Wisdom (perception) check."
+					]
+				},
+				{
+					"name": "Swallow (2 actions)",
+					"entries": [
+						"The false hydra makes a swallow attack against a creature it has {@condition grappled}."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://user-images.githubusercontent.com/67844434/86595072-752c6780-bf98-11ea-8043-23b3c58ee307.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://user-images.githubusercontent.com/67844434/86595057-7067b380-bf98-11ea-8874-b2697cfab14b.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"languageTags": [
+				"CS",
+				"TP"
+			],
+			"damageTags": [
+				"A",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"frightened",
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Plutonian hulk",
+			"alias": [
+				"hulk",
+				"lovecraft",
+				"mind",
+				"mind flayer"
+			],
+			"source": "AlexCodex",
+			"size": "L",
+			"type": "aberration",
+			"alignment": [
+				"L",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 50",
+				"average": 80
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 8,
+			"wis": 10,
+			"cha": 14,
+			"save": {
+				"str": "+6",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"understand the languages it knew before transformation but can't speak"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Compelled Mind",
+					"entries": [
+						"The Hulk can't be compelled to act in a manner contrary to its nature or its instructions."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}17({@damage 3d6 + 5}) bludgeoning damage, the creature must succeeds a Strength (athletics) or Dexterity (acrobatics) check or be {@condition grappled} (escape {@dc 14}).Until this grapple ends, the target is {@condition restrained}, and it takes 12 ({@damage 3d6}) bludgeoning damage at the start of each of its turns. The Hulk can Grapple only one target at a time."
+					]
+				},
+				{
+					"name": "Sweep",
+					"entries": [
+						"The hulk drags and swings its tentacles around , and every creature within 5 feet of it must make a {@dc 14} Dexterity saving throw. On a failed saving throw, a creature takes 8 ({@damage 1d8 + 4}) bludgeoning damage and is knocked {@condition prone}. On a successful save, the creature takes half as much damage and isn't knocked {@condition prone}."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark",
+				"underwater",
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://user-images.githubusercontent.com/67844434/86962154-b2dcec00-c162-11ea-9d74-a1f6880b6579.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://user-images.githubusercontent.com/67844434/86971361-559c6700-c171-11ea-908e-95d901739b51.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://user-images.githubusercontent.com/67844434/86962158-b4a6af80-c162-11ea-8758-e4947cc206fc.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone",
+				"restrained"
+			]
+		},
+		{
+			"name": "Servitore del Segno Giallo",
+			"shortName": "servitore",
+			"source": "AlexCodex",
+			"page": "345",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 44
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 17,
+			"con": 14,
+			"int": 11,
+			"wis": 15,
+			"cha": 16,
+			"save": {
+				"dex": "+5",
+				"cha": "+5"
+			},
+			"skill": {
+				"performance": "+5",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapons"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Il servitore è un incantatore di 7° livello: la sua caratteristica da incantatore è Carisma (tiro salvezza degli incantesimi 13, +5 al tiro per colpire degli attacchi con incantesimo ). Ha preparato i seguenti incantesimi da Bardo:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell message}",
+								"{@spell minor illusion}",
+								"{@spell vicious mockery}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell disguise self}",
+								"{@spell sleep}",
+								"{@spell Tasha's hideous laughter}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell see invisibility}",
+								"{@spell shatter}",
+								"{@spell suggestion}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell fear}",
+								"{@spell hastur's melody|AlexCodex}",
+								"{@spell speak with dead}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell greater invisibility}"
+							],
+							"slots": 1
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Bardic inspiration (3 short/long rest)",
+					"entries": [
+						"Il Servitore può usare un'azione bonus per concedere ad un alleato che sia in grado di sentirlo un {@dice d8} di ispirazione bardica, se l'alleato non ne possiede già uno.",
+						"Una volta entro 10 minuti può tirare il dado dopo aver effettuato un check, un save o o un tiro per colpire, ma prima che il GM lo dichiari il successo o fallimento, il risultato è aggiunto al totale"
+					]
+				},
+				{
+					"name": "Scacciare Contrasto",
+					"entries": [
+						"Il Servitore ha vantaggio ai tiri salvezza contro gli effetti che scacciano i non-morti"
+					]
+				},
+				{
+					"name": "Simbolismo Arcano",
+					"entries": [
+						"Il Servitore dispone di vantaggio in Intelligenza (Arcano)(Indagare) e Saggezza (Percezione) effettuate per notare, identificare o oltrepassare trappole o scritti magici. Ha vantaggio anche contro i tiri salvezza contro trappole e gli effetti degli oggetti magici.",
+						"Inoltre può utilizzare due dadi di ispirazione bardica per lanciare {@spell glyph of warding}  senza usare slot incantesimo "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "dagger",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"COSA SI VEDE:",
+					"Questo cadavere avvizzito indossa delle vesti che un tempo devono essere state molto belle , ma che ora sono solo stracci del tempo passato.La sua carne è stranamente scolorita e ha un tentacolo sinuoso al posto del braccio sinistro.",
+					"BARDO:",
+					"Il suonatore di quell'abominevole strumento spicca e risalta in mezzo alle bestie anche solo per gli abiti intrisi di olio oltre che per il simbolo inciso sul suo stendardo.(simbolo giallo, vedi pagina 113).",
+					"I MORTI PAZZI",
+					"Certe tecniche alchemiche possono rianimare i cadaveri",
+					"morti da poco ma, sebbene questi metodi ridiano una",
+					"parvenza di vita alla vittima, il passaggio dalla morte alla",
+					"vita produce solo pazzia. I morti pazzi non sono non morti",
+					"dei Miti: devono invece essere considerati come zombi.",
+					"A differenza dei tipici zombi, i morti pazzi non sono",
+					"intrinsecamente malvagi: la loro voglia di distruggere e",
+					"di nuocere ai vivi deriva dalla follia, non da una malvagità",
+					"organizzata. Di solito hanno un allineamento caotico",
+					"neutrale.",
+					"In rari casi, quando certe tecniche alchemiche vengono",
+					"applicate a un cadavere incredibilmente fresco (o anche",
+					"parti integre di cadaveri freschi) che aveva in vita una",
+					"mente particolarmente potente e concentrata, il risultato",
+					"è una creatura non morta che mantiene il suo intelletto; in",
+					"quel caso, la creatura generata è un non morto dei Miti."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://user-images.githubusercontent.com/67844434/87081614-f2224000-c229-11ea-9031-f10df94b19e3.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://user-images.githubusercontent.com/67844434/87081614-f2224000-c229-11ea-9031-f10df94b19e3.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Assassino del culto",
+			"shortName": "Assassino",
+			"source": "AlexCodex",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"C",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 16,
+			"int": 11,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"con": "+5"
+			},
+			"skill": {
+				"stealth": "+5",
+				"survival": "+4"
+			},
+			"passive": 12,
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Attacco a Sorpresa",
+					"entries": [
+						"se l'assassino sorprende una creatura e la colpisce con un attacco durante il primo round di combatti- mento, il bersaglio subisce 7 ({@dice 2d6}) danni extra dall'attacco."
+					]
+				},
+				{
+					"name": "Bruto",
+					"entries": [
+						"Quando l'assassino colpisce con un'arma da mischia, l'attacco infligge un dado extra del tipo di danno dell'arma (già incluso nelle statistiche sottostanti)."
+					]
+				},
+				{
+					"name": "Devozione oscura",
+					"entries": [
+						"L'assassino dispone di vantaggio ai tiri salvezza contro le condizioni di affascinato e spaventato."
+					]
+				},
+				{
+					"name": "Fuga Agile",
+					"entries": [
+						"L'assassino può effettuare l'azione di Disimpegno o Nascondersi come azione bonus a ogni suo turno."
+					]
+				},
+				{
+					"name": "Implacabile",
+					"entries": [
+						"Se i danni riducono l'assassino a O punti ferita, esso deve effettuare un tiro salvezza su Costituzione con una CD pari a 5 + i danni subiti. Se ha successo, l'assassino scende invece a 1 punto ferita."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattacco",
+					"entries": [
+						"L'assassino utilizza la sua Presenza Terrificante, poi effettua due attacchi. uno con il morso e due con le sue armi."
+					]
+				},
+				{
+					"name": "Ingresso Angolare (Ricarica dopo un Riposo Breve o Lungo).",
+					"entries": [
+						"L'assassino del culto si teletrasporta in un luogo che ha visto precedentemente o del quale ha una buona descrizione e che si trovi entro 150 metri. Può anche scegliere una destinazione dichiarando una distanza e una direzione. Arriva nello spazio non occupato più vicino alla destinazione che si trovi entro 1,5 metri da un angolo nettamente tracciato e che misuri almeno 1,5 metri tra le due superfici, come l'angolo di una stanza o un portone. L'angolo deve essere di non più di 120° e deve avere una forma fisica; la sola immagine di un angolo non è sufficiente."
+					]
+				},
+				{
+					"name": "Presenza terrificante",
+					"entries": [
+						"Ogni creatura a scelta dell'assassino situata entro 18 metri da esso e che sia consapevole dell'assassino deve superare un tiro salvezza su Saggezza con CD 12, altrimenti è soaventata per 1 minuto. Una creatura può ripetere il tiro salvezza alla fine di ogni suo turno e, se lo supera, l'effetto per lei termina Se una creatura supera il tiro salvezza o se l'effetto per lei termina, quella creatura è immune alla Presenza Terrificante dell'as- sassino per le 24 ore successive."
+					]
+				},
+				{
+					"name": "Ascia da battaglia",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) slashing damage, or 14 ({@damage 2d10 + 3}) slashing damage if used with both hands."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Un assassino del culto commette omicidi",
+					"ispirandosi agli incontri, sconvolgenti per la",
+					"sua mente, con le forze dei Miti, oppure per",
+					"nicevere in cambio poteri innaturali. Gli as-",
+					"sassini con un background più acculturato",
+					"o urbano, in particolare quelli sfiorati dal Re",
+					"in Giallo, Hasturo Nyarlathotep, trascorrono",
+					"resto del loro tempo intenti a intrattenere il pubblico",
+					"oacreare opere d'arte nella speranza di avere altre illa",
+					"minazioni. Altri assassini si aggirano per luoghi dimen",
+					"ticati, semplicemente alla ricerca di vittime che",
+					"sembrano possibili sacrifici da utilizzare",
+					"n terribili riti. I più famosi assassini dei",
+					"culti agiscono da soli, ma molti altri sono",
+					"al servizio di culti organizzati."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/originals/d0/e0/b6/d0e0b60a772b28574229618bda029db0.png"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/originals/f7/94/9c/f7949cba0019651a93d345342fe71a9b.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.pinimg.com/originals/f7/94/9c/f7949cba0019651a93d345342fe71a9b.png",
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Fattucchiere Raffinato",
+			"shortName": "Fattucchiere",
+			"source": "AlexCodex",
+			"page": "406",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"C",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"special": "15 "
+				}
+			],
+			"hp": {
+				"formula": "6d8",
+				"average": 27
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 10,
+			"int": 14,
+			"wis": 13,
+			"cha": 16,
+			"skill": {
+				"arcana": "+4",
+				"deception": "+5"
+			},
+			"passive": 11,
+			"resist": [
+				{
+					"special": "Danno dagli incantesimi"
+				}
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Innate spellcasting",
+					"headerEntries": [
+						"La caratteristica da incantatore del fattucchiere raffinato é Carisma (tiro salvezza degli incantesimi CD 13) I fattucchiere raffinato può lanciare i seguenti incantesimi innati, che non richiedono alcuna componente:"
+					],
+					"will": [
+						"{@spell disguise self}",
+						"{@spell mage armor}"
+					],
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Il fattucchiere è un incantatore di 6 livello: la sua caratteristica da incantatore é Carisma (tiro salvezza degli incantesimi CD 13, +5 al tiro per colpire degli attacchi con incantesimo). Conosce i seguenti incantesimi da warlock:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell eldritch blast} (spinge il bersaglio di 3 metri)",
+								"{@spell minor illusion}"
+							]
+						},
+						"3": {
+							"spells": [
+								"{@spell identify}",
+								"{@spell invisibility}",
+								"{@spell moonbeam}",
+								"{@spell pass without trace}",
+								"{@spell see invisibility}",
+								"{@spell slow}",
+								"{@spell suggestion}"
+							],
+							"slots": 2,
+							"lower": 1
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Segreto della fine del tempo",
+					"entries": [
+						"Ogni qual volta il fattucchiere infligge danno con un incantesimo da warlock, il massimo dei punti ferita del bersaglio è ridotto di un ammontare pari al danno inflitto per 1 ora. Se il fattucchiere riduce il bersaglio a O punti ferita, guadagna 5 punti ferita temporanei."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "multiattacco",
+					"entries": [
+						"Il fattucchiere raffinato effettua due attacchi con arma."
+					]
+				},
+				{
+					"name": "Stocco del patto",
+					"entries": [
+						"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d8 + 2}) piercing damage, plus 7 ({@damage 2d6}) force damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Opposizione magica",
+					"entries": [
+						"Quando una creatura colpisce il fattucchiere raffinato con un attacco, questo può lanciare un trucchetto sull'attaccante o effettuare un attacco con arma contro di esso."
+					]
+				}
+			],
+			"environment": [
+				"grassland",
+				"hill",
+				"swamp",
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Un fattucchiere raffinato ha stretto un patto con un'entità dei Miti per ottenere potere o notorietà. A seconda del suo allineamento, il fattucchiere potrebbe sperare di proteggere una città da nemici apparentemente più minacciosi, ottenere l'ascendente richiesto per i propri fini egoistici o distruggere tutto per vendicarsi di qualche torto reale o immaginato. I fattucchieri umani spesso hanno stretto patti con Atlach-Nacha, Azathoth, Cthugha, Ghatanothoa, Gobogeg, il Grande Cthulhu, Hastur, Nyarlathotep, Nyogtha, Quachil Uttaus, il Re in Giallo, Rhan-Tegoth, Tsathoggua o Tulzscha."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://user-images.githubusercontent.com/67844434/87081603-ef274f80-c229-11ea-87cb-f0690c4fdbc6.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://user-images.githubusercontent.com/67844434/87081603-ef274f80-c229-11ea-87cb-f0690c4fdbc6.jpg",
+			"damageTags": [
+				"O",
+				"P"
+			],
+			"spellcastingTags": [
+				"CL",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Berseker Benedetto",
+			"shortName": "Berseker",
+			"source": "AlexCodex",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"C",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 33",
+				"average": 82
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 16,
+			"int": 8,
+			"wis": 12,
+			"cha": 13,
+			"save": {
+				"con": "+5",
+				"str": "+5"
+			},
+			"skill": {
+				"perception": "+3",
+				"survival": "+3"
+			},
+			"passive": 13,
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Avventato",
+					"entries": [
+						"All'inizio del suo turno il Berseker può ottenere vantaggio a tutti i suoi tiri a colpire con le armi da mischia che effettua in quel turno, ma i tiri per colpire contro di lui dispongono di vantaggio fino all'inizio del suo turno successivo"
+					]
+				},
+				{
+					"name": "Fiutare Magia",
+					"entries": [
+						"Il Berserker nota automaticamente gli oggetti magici e gli incantesimi entro 18 metri. Dispone di vantaggio sulle prove di Saggezza (Percezione) effettuate per notare le trappole magiche"
+					]
+				},
+				{
+					"name": "Devozione oscura",
+					"entries": [
+						"L'assassino dispone di vantaggio ai tiri salvezza contro le condizioni di affascinato e spaventato."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattacco",
+					"entries": [
+						"Il Berserker effettua tre attacchi: uno con il morso e due con le sue armi. Può utilizzare Cannibalismo o Ululare alla luna al posto del suo morso "
+					]
+				},
+				{
+					"name": "Cannibalismo (1/giorno)",
+					"entries": [
+						"Come azione bonus Il Berserker consuma una porzione di carne umanoide che porta con sé o di un cadavere di umanoide entro 1,5 metri da esso. Quando lo fa, ottiene 5 punti ferita temporanei che permangono per 1 ora. Fino a quando il Berserker possiede questi punti ferita temporanei, dispone di vantaggio ai tiri salvezza su Costituzione"
+					]
+				},
+				{
+					"name": "Ululare alla luna",
+					"entries": [
+						"Il Berserker lancia un ululato terrificante. Fino a quattro creature di sua scelta entro 18 metri che siano in grado di sentirlo devono superare un tiro salvezza su Saggezza con CD 13 o diventare magicamente spaventate per 1 minuto. Una creatura spaventata può effettuare un altro tiro salvezza alla fine di ogni suo turno, e se lo supera la condizione spaventato termina per lei. Il Berserker non può scegliere di nuovo la stessa creatura fino a quando non completa un riposo lungo."
+					]
+				},
+				{
+					"name": "Ascia",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage in melee, or 6 ({@damage 1d6 + 3}) slashing damage at range."
+					]
+				},
+				{
+					"name": "Morso",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Un berserker benedetto è uno dei",
+					"combattenti d'élite al servizio di culti",
+					"pericolosi come quelli di Ithaqua e",
+					"Shub-Niggurath. L'aver osservato en-",
+					"tità al di là della comprensione dei mortali",
+					"ha danneggiato le menti dei berserker, rendendoli straordina-",
+					"riamente instabili e pericolosi."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/originals/d0/e0/b6/d0e0b60a772b28574229618bda029db0.png"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/originals/f7/94/9c/f7949cba0019651a93d345342fe71a9b.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.pinimg.com/originals/f7/94/9c/f7949cba0019651a93d345342fe71a9b.png",
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Segugio di Tindalos",
+			"shortName": "Segugio",
+			"source": "AlexCodex",
+			"page": 378,
+			"size": "L",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"C",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 35",
+				"average": 73
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 21,
+			"int": 17,
+			"wis": 20,
+			"cha": 18,
+			"senses": [
+				"darkvision 90 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"necrotic",
+				"poison",
+				{
+					"resist": [
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapon"
+				}
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"languages": [
+				"Aklo",
+				"telepathy 120ft"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Incantesimi innati (psionici)",
+					"headerEntries": [
+						"la caratteristica d'incantatore del segugio è Intelligenza (tiro slavezza degli incantesimi CD 14,+6 al tiro per colpire con gli attacchi con incantesimo) il segugio può lanciare i seguenti incantesimi innati, che non richiedono alcun componente:"
+					],
+					"will": [
+						"{@spell fog cloud}",
+						"{@spell invisibility}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell detect thoughts}",
+							"{@spell scrying}"
+						],
+						"1e": [
+							"{@spell hold monster}",
+							"{@spell locate creature}",
+							"{@spell phantasmal killer}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Eterno",
+					"entries": [
+						"Il segugio di Tindalos non può essere invecchiato ed è immune a lentezza e a qualsiasi altro incantesimo o effetto che altererebbe il modo in cui il tempo trascorre per esso. Il segugio individua automaticamente i viaggi nel tempo e le divinazioni che scorgono il passato o il futuro che sono utilizza- te entro 1,5 chilometri da esso, o che scoprono informazioni riguardo una qualsiasi cosa entro 1,5 chilometri da esso. può effettuare una prova di Saggezza (Percezione) per individuare tali incantesimi o effetti anche a gittate maggiori. Il segugio può viaggiare nel tempo con il suo Ingresso Angolare per raggiungere la fonte del disturbo, sebbene dalla prospettiva del bersaglio ciò impieghi almeno delle ore, se non parecchi giorni; maggiore è la distanza nel tempo tra il segugio e il disturbo, più tempo impiega il viaggio."
+					]
+				},
+				{
+					"name": "Icore",
+					"entries": [
+						"Il segugio è ricoperto di un icore tossico. Una creatura viene esposta a esso se tocca il segugio, colpisce il segugio con un'arma mentre si trova entro 1,5 metri da esso, o quando viene colpita dall'attacco di artiglio del segugio. All'inizio di ogni turno della creatura esposta, essa subisce 3 ({@dice 1d6}) danni da veleno. L'effetto ha termine quando una creatura utilizza la sua azione per rimuovere l'icore o quando subisce danno da fuoco"
+					]
+				},
+				{
+					"name": "Rigenerazione",
+					"entries": [
+						"Il segugio recupera 15 punti ferita all'inizio del suo turno se possiede almeno 1 punto ferita"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattacco",
+					"entries": [
+						"il segugio effettua due attacchi con l'artiglio."
+					]
+				},
+				{
+					"name": "Ingresso Angolare (Ricarica 4-6).",
+					"entries": [
+						"Il segugio di Tindalos si teletrasporta in un luogo che ha visto precedentemente o del quale ha una buona descrizione, anche se questo dovesse trovarsi su un altro piano di esistenza Puo anche scegliere una destinazione dichiarando una distanza entro 150 metri e una direzione. Arriva nello spazio non occupato più vicino alla destinazione che sia entro 1,5 metri da un angolo nettamente tracciato che misuri almeno 1,5 metri tra le due superfici, come l'angolo di una stanza o di un portone. L'angolo deve essere di non più di 120 e deve avere una forma fisica; la sola immagine di un angolo non è sufficiente"
+					]
+				},
+				{
+					"name": "Artiglio",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage, plus 3 ({@damage 1d6}) poison damage. and the target is exposed to the effect of Icore"
+					]
+				},
+				{
+					"name": "Lingua",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}25 ({@damage 4d10 + 3}) psychic damage and the target's Wisdom score is reduced by {@dice 1d4}.",
+						"The target dies if they hp are reduced to 0, otherwise the reduction persists until the end of a long rest."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"PER DM",
+					"I segugi di Tindalos vivono in un remotissimo passato. Sfortunatamente, ciò non è sufficiente a tenere gli abitanti del presente al sicuro da essi. I segugi viaggiano nel tempo, anziché nello spazio, e possono aprirsi la strada nei secoli per raggiungere coloro di cui hanno deciso di nutrirsi. I loro obiettivi sono misteriosi, ma si dice che siano affamati di una particolare fonte di cibo che abbonda nei corpi umanoidi: forse una so- stanza fisica o qualche specie di energia spirituale. Dato che vivono nel passato, i segugi devono essere contattati o avvisati in qualche modo della potenziale presenza della preda. Qualsiasi tipo di viaggio nel tempo ha la possibilità di emettere energie o vibrazioni che i segugi possono percepire, dopodiché possono mettersi in caccia della vittima. I segugi vivono negli interstizi del tempo, per quanto non sia esattamente chiaro cosa significhi questa definizione. Possono emergere in un mondo solo attraversando un angolo inferiore ai 120 gradi (per definizione, una stanza rettangolare ha angoli di 90 gradi). Alcune vittime sono riuscite, con successo, a evitare i segugi nascondendosi in un'area che non ha angoli né pareti, ma invece è arrotondata e liscia. Sfortunatamente, difendersi solo dai segugi a volte non è sufficiente per la preda. Molte creature maligne, come i Satiri dei Miti e i Dhole, conoscono i segugi e sono disposte a collaborare con loro, aiutandoli a raggiungere le loro vittime.",
+					"ANTICHE INTUIZIONI MAGICHE.",
+					"I segugi di Tindalos sfruttano il loro accesso a recessi alieni del tempo per praticare strane forme di magia. Molti segugi di Tindalos possono conoscere incantesimi diversi da quelli descritti in questa sezione, abitualmente dello stesso livello dell'incantesimo.",
+					"PER GIOCATORI",
+					"I segugi di Tindalos sono predatori di altre dimensioni provenienti da oltre i confini della realtà conosciuta, di norma appaiono solo quando vengono evocati da incantatori senza scrupoli. Ben poco si sa della loro natura al di fuori di note macchiate di sangue e scritti deliranti di coloro che sono sopravvissuti ai loro attacchi divenendo quasi folli. Sebbene possiedano una grande astuzia e un intelletto crudele, i segugi non mostrano alcun cenno di comprendere i mortali o di voler comunicare con essi. Entrano nel mondo fisico di loro volontà all’inseguimento di coloro che hanno percorso troppo le strade invisibili oltre il tempo e la realtà; viaggiatori nel tempo, che viaggino fisicamente o gettino sguardi divinatori avanti e indietro nel tempo, e le creature che si teletrasportano senza badare a come il loro movimento possa condizionare sottilmente le correnti magiche nel multiverso attirano particolarmente il loro interesse.",
+					"***COSA SI VEDE*** ",
+					"Questa entità emaciata e spigolosa, dalla forma",
+					"di un grosso cane scheletrico, emette un",
+					"bagliore bluastro."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://golarion.altervista.org/images/thumb/9/99/Segugio_di_Tindalos.jpg/629px-Segugio_di_Tindalos.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://user-images.githubusercontent.com/67844434/87148967-ab772900-c2af-11ea-9259-7d3c5e69eb63.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://user-images.githubusercontent.com/67844434/87148967-ab772900-c2af-11ea-9259-7d3c5e69eb63.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTags": [
+				"I",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Prole Informe",
+			"shortName": "Prole",
+			"source": "AlexCodex",
+			"size": "L",
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "10d10 + 40",
+				"average": 95
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 50,
+				"climb": 30
+			},
+			"str": 17,
+			"dex": 19,
+			"con": 18,
+			"int": 15,
+			"wis": 12,
+			"cha": 15,
+			"senses": [
+				"blindsight 90 ft.",
+				"tremorsense 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"lightning",
+				"piercing",
+				"slashing"
+			],
+			"immune": [
+				"acid"
+			],
+			"languages": [
+				"aklo"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The prole can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the prole remains motionless, it is indistinguishable from an oily pool or wet rock."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The prole ignores movement restrictions caused by webbing."
+					]
+				},
+				{
+					"name": "Plasmare arma",
+					"entries": [
+						"Usando un'azione bonus, la prole informe può plasmare il suo corpo per ottenere uno dei seguenti attacchi fino alla fine del turno: ",
+						"Filamenti a Frusta. ",
+						"Rostro",
+						"Morso"
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"The Prole can take one reaction on every turn in combat."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The prole has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "pseudopodo",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Filamentei a frustra",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 15 ft., up to 5 targets. {@h}8 ({@damage 2d4 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Morso",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d12 + 3}) bludgeoning damage plus 7 ({@damage 2d6}) acid damage.Se il bersaglio è una creatura di taglia Grande o inferiore,è afferrata ({@dc 13} per sfuggire). Fino al termine di questa lotta, la creatura è trattenuta, e la prole informe non può mordere altri bersagli. Quando la prole informe si muove, qualsiasi creatura di taglia Grande o inferiore che sta afferrando si muove insieme ad essa."
+					]
+				},
+				{
+					"name": "Rostro",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}29 ({@damage 4d12 + 3}) piercing damage.Se il bersaglio è una creatura, deve superare un tiro salvezza su Forza con {@dc 15} o essere buttata a terra prona o spinta di 1,5 metri (a scelta della prole informe)"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Filamenti Protettivi.",
+					"entries": [
+						"La prole informe aggiunge 5 alla sua CA contro un attacco in mischia che la colpirebbe. Per farlo, la prole informe deve vedere o individuare in qualche modo l'attaccante"
+					]
+				}
+			],
+			"environment": [
+				"underwater",
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Nelle profondità del sottosuolo vivono le prole informi di Tsathoggua. Si tratta di entità fluide di protoplasma nero, che possono cambiare forma con la stessa velocità dell'acgua. Nel loro habitat naturale sono quasi liquide ed erigono canali o condotte di pietra attraverso le quali possono scorrere a incredibile velocità. II loro posto di riposo preferito è una vasca o una depressione del terreno. Una specifica prole informe pub essere grande o piccola, ma la media è intorno ai 4,5 metri di larghezza con un peso di circa 1.000 chilogrammi. Per quanto le prole informi siano tecnicamente delle melme, non assumono quasi mai delle forme semplici. Spesso si fanno spuntare delle zampe su cui correre, volti deformi con cui osservare e arti con cui afferrare e trattenere. Quando si acquattano in una stanza, di solito sparano dei filamenti appiccicosi per arrampicarsi sulle pareti o sul soffitto, formando una struttura simile a una ragnatela col proprio corpo. Nonostante le differenze superficiali, le prole informi sono imparentate con Tsathoggua in persona e senza dubbio provengono dalla sua stessa oscura dimora. Tsathoggua genera prole informi quando viene ferito, e quindi egli è forse l'obiettivo finale e la massima evoluzione del loro ciclo vitale. o forse è un agglomerato costruito dalle prole informi per contenere il loro potenziale magico. A differenza di molte entità dal simile influsso, le prole in- formi hanno una filosofia totalmente caotica. Sebbene a volte operino verso lo stesso obiettivo superiore, ciascuna di esse agisce in maniere e in modi totalmente indipendenti. Nemmeno Tsathoggua cerca di comandarle, confidando invece che i loro desideri innati le spingano a portare avanti i suoi piani.",
+					"***COSA SI VEDE***",
+					"Questo ammasso nero di denso materiale",
+					"organico cambia rapidamente forma,",
+					"producendo dei tentacoli nodosi e",
+					"formando delle zampe, delle bocche e",
+					"altre strutture senza una logica apparente.",
+					"Rimane in totale silenzio nonostante il caos",
+					"della sua forma in continua mutazione, quando ci si",
+					"aspetterebbe un rumore simile a quello di un ruscello o",
+					"di una vasca d'acqua ribollente."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://user-images.githubusercontent.com/67844434/87190850-94f2c100-c2f3-11ea-9c34-1554c066ac93.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://user-images.githubusercontent.com/67844434/87190836-8ad0c280-c2f3-11ea-9975-e898605e7310.png",
+			"traitTags": [
+				"Amorphous",
+				"False Appearance",
+				"Magic Resistance",
+				"Web Walker"
+			],
+			"senseTags": [
+				"B",
+				"T"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Cucciolo Oscuro Adolescente",
+			"shortName": "Cucciolo oscuro",
+			"source": "AlexCodex",
+			"page": "297",
+			"size": "L",
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 30",
+				"average": 85
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 19,
+			"con": 16,
+			"int": 14,
+			"wis": 16,
+			"cha": 17,
+			"skill": {
+				"survival": "+6",
+				"nature": "+5",
+				"perception": "+6",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"blindsight 30 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"cold",
+				"fire"
+			],
+			"immune": [
+				"acid",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"aklo",
+				"sylvan"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Reactive",
+					"entries": [
+						"The cucciolo oscuro can take one reaction on every turn in combat."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The cucciolo oscuro has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Sussurro Snervante",
+					"entries": [
+						"ll cucciolo oscuro sussurra costantemente ed emette mormorii dalle sue numerose bocche a meno che non sia privo di sensi. Ogniqualvolta una creatura che non sia un'aberrazione inizia il suo turno entro 1,5 metri dal cucciolo oscuro e sia in grado di sentirlo, essa deve effettua re un tiro salvezza su Saggezza con {@dc 14}. Se lo fallisce, la creatura viene magicamente spaventata dal suono sovrannaturale e stridente fino all'inizio del suo prossimo turno; mentre se lo supera, la creatura è immune al Sussurro Snervante del Cucciolo oscuro per 24 ore."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattacco",
+					"entries": [
+						"Il cucciolo oscuro effettua due attacchi con i suoi tentacoli."
+					]
+				},
+				{
+					"name": "Tentacolo",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4})  bludgeoning damage.Se il bersaglio è una creatura di taglia Media o inferiore, deve superare un tiro salvezza su Forza con {@dc 15} o essere afferrata ({@dc 14} per sfuggire). Fino al termine della lotta, il bersaglio è trattenuto e il cucciolo oscuro non può attaccare nessun'altra creatura con quel tentacolo. ll Cucciolo Oscuro possiede cinque tentacoli."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill",
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"il cucciolo oscuro è la spaventosa prole di Shub-Nigggurath o di una delle sue figlie. Le creature vengono di solito cresciute in un luogo al di fuori delle normali dimensioni dello spazio-tempo e scatenate sul normale universo solo quando adulte. Quando i cuccioli oscuri vengono uccisi, si scopre che sono prevalentemente (se non completamente) cavi, a eccezione dei più maturi tra di essi; i loro gusci avvizziscono nel giro di qualche giorno. La loro carne e altamente velenosa quando viene ingerita, ma è anche un potente afrodisiaco.",
+					"Un cucciolo oscuro può attaccare facilmente da tutte le direzioni. Non puó essere sorpreso né attaccato\"alle spalle\". Attacca con numerosi tentacoli, afferrando, stritolando e schiacciando le vittime. Ama lanciare le prede in aria con i suoi tentacoli, afferrarle al volo e poi lanciarle di nuovo, come un macabro giocoliere che si diverta con le vittime per disorientarle e render loro più difficile liberarsi dalle sue grinfie. Ogni volta che la vittima cade, il cucciolo oscuro la stritola e la schiaccia rapidamente, poi la rilancia in aria.",
+					" Tutti i cuccioli oscuri sono lievemente diversi tra di loro, proprio come ogni albero ha una forma leggermente differente. Un dato esemplare ha dalle 2 alle 4 gambe grosse e munite di zoccoli a sostenerlo. Questi orrori tentacolati possono raggiungere dimensioni ragguardevoli. Dagli zoccoli alla cima dei tentacoli, possono raggiungere le decine di metri di altezza e pesare diverse tonnellate. Tuttavia. giacché sono cavi. gli adolescenti sono stranamente leggeri e potrebbero pesare meno di 500 chilogrammi.",
+					"***CARNE TOSSICA***",
+					"Se una creatura mangia la carne di un cucciolo oscuro, deve superare un tiro salvezza su Costituzione con CD 15 o subire 11 (2d10) danni da veleno. Inoltre il suo punteggio di Saggezza viene ridotto di 1d4 finché non completa un riposo lungo. Se, mentre il suo punteggio di Saggezza è ridotto concepisce (e il concepimento è insolitamente probabile in questo caso), la prole sarà un satiro dei Miti, un mutante esterno o un'altra creatura soggetta a Shub-Niggurath. Questa massiccia bestia tentacolare si sporge in avanti sorretta da larghi zoccoli. Non ha volto né occhi, ma il suo corpo cilindrico è circondato di bocche fischiettanti e spalancate. Lunghi tentacoli capaci di afferrare le vittime ondeggiano follemente dal dorso, sbattendo tra di loro come un pesce morente che si agita su una pila di carcasse.",
+					"***cosa si vede***",
+					"Questa massiccia bestia tentacolare",
+					"si sporge in avanti sorretta da larghi",
+					"zoccoli. Non ha volto né occhi, ma",
+					"il suo corpo cilindrico è circondato",
+					"di bocche fischiettanti e spalancate.",
+					"Lunghi tentacoli capaci di afferrare",
+					"le vittime ondeggiano follemente dal",
+					"dorso, sbattendo tra di loro come un pesce morente",
+					"che si agita su una pila di carcasse."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://user-images.githubusercontent.com/67844434/87209225-697ecf00-c311-11ea-80b3-e4a7a488a7c8.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://user-images.githubusercontent.com/67844434/87209225-697ecf00-c311-11ea-80b3-e4a7a488a7c8.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Ragno di Leng",
+			"source": "AlexCodex",
+			"page": "370",
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d10 + 44",
+				"average": 104
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 17,
+			"dex": 20,
+			"con": 18,
+			"int": 16,
+			"wis": 16,
+			"cha": 17,
+			"skill": {
+				"stealth": "+8",
+				"investigation": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The ragno di leng ignores movement restrictions caused by webbing."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The ragno di leng can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The ragno di leng has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the ragno di leng knows the exact location of any other creature in contact with the same web."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattacco",
+					"entries": [
+						"ll ragno di Leng effettua tre attacchi con con morso e due con i suoi speroni"
+					]
+				},
+				{
+					"name": "Morso",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage, plus 7 ({@damage 3d4}) poison damage.Se il bersaglio é una creatura, viene avvelenato. Al termine del suo prossimo turno la creatura deve effettuare un tiro salvezza su Costituzione con {@dc 15} e se lo supera non è più avvelenata. La creatura può effettuare nuovamente questo tiro salvezza alla fine di ogni 30 giorno successivo. Questa è una maledizione. Qualsiasi incantesimo che rimuove la condizione avvelenato o che rimuove le maledizioni fa terminare la condizione avvelenato"
+					]
+				},
+				{
+					"name": "Sperone",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Sperone",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 30/60 ft., one target. {@h}ll bersaglio e trattenuto dalla ragnatela. Ogniqualvolta una creatura inizia il suo turno trattenuta da questa ragnatela, deve superare un tiro salvezza su Costituzione con {@dc 15}  o diventare avvelenata. Al termine di ciascun turno della creatura avvelenata, essa deve effettuare un nuovo tiro salvezza, e se lo supera la condizione su di sé termina. La creatura trattenuta o un'altra creatura che sia in grado di raggiungerla può utilizzare la sua azione per effettuare una prova di Forza (Atletica) con {@dc 15}  per distruggere la ragnatela La ragnatela può anche essere attaccata e distrutta (CA 13; 10 pf; vulnerabilità ai danni da fuoco e immunità ai danni contundenti, psichici e da veleno)"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"***Cosa si vede***",
+					"Gli occhi di questo ragno purpureo rigonfio e maculato brillano di luce inquietante, come se fosse risentito del fatto che siete ancora vivi. La testa si abbassa a fiutare l'area...come se fosse in cerca del suo prossimo pasto "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://user-images.githubusercontent.com/67844434/87210335-70a7dc00-c315-11ea-8b64-7ffaaf6fe838.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://user-images.githubusercontent.com/67844434/87210335-70a7dc00-c315-11ea-8b64-7ffaaf6fe838.png",
+			"traitTags": [
+				"Magic Resistance",
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Assassino okkator",
+			"source": "AlexCodex",
+			"page": 386,
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 27",
+				"average": 67
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 16,
+			"int": 14,
+			"wis": 13,
+			"cha": 9,
+			"save": {
+				"int": "+4",
+				"dex": "+5"
+			},
+			"skill": {
+				"acrobatics": "+5",
+				"stealth": "+7",
+				"perception": "+3",
+				"survival": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"comune",
+				"Thieves' cant",
+				"other 2 languages"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Sneak Attack (1/turno)",
+					"entries": [
+						"The assassino okkator deals an extra 10 ({@damage 3d6}) piercing damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassino okkator that isn't {@condition incapacitated} and the assassino okkator doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Assassinate",
+					"entries": [
+						"During its first turn, the assassino okkator has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassino okkator scores against a surprised creature is a critical hit."
+					]
+				},
+				{
+					"name": "Elusione",
+					"entries": [
+						"Quando l'assassino effettua un tiro salvezza su Destrezza per dimezzare i danni, non subisce invece alcun danno se lo supera, altrimenti subisce metà danni se lo fallisce."
+					]
+				},
+				{
+					"name": "Mente distorta",
+					"entries": [
+						"L'assassino dispone di vantaggio ai tiri salvezza contro incantesimi ed effetti che lo renderebbero affascinato o spaventato. L'assassino supera automaticamente i tiri salvezza su Saggezza se l'incantesimo o effetto funziona solamente sugli umanoidi."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mulitattacco",
+					"entries": [
+						"L'assassino okkator fa due attacchi a distanza, oppure due attacchi in mischia: uno con il suo morso e uno con i suoi artigli."
+					]
+				},
+				{
+					"name": "Morso",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage, plus 5 ({@damage 1d10}) poison damage."
+					]
+				},
+				{
+					"name": "Artigli",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}13 ({@damage 3d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Cerbottana",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 25/100 ft., one target. {@h}4 ({@damage 1d4}) piercing damage. Se il bersaglio è una creatura, deve superare un tiro salvezza su Costituzione con CD 13; se lo fallisce subisce 11 ({@damage 2d10}) poison damage, mentre se lo supera subisce la metà di questi danni. Se il danno da veleno riduce il bersaglio a O punti ferita, questo diventa automaticamente stabile ma anche avvelenato per l ora, anche dopo aver recuperato punti ferita. Fino a quando è avvelenato in questo modo, è anche paralizzato."
+					]
+				},
+				{
+					"name": "Ragnatela caustica",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/60 ft., one target. {@h}12 ({@damage 2d8 + 3}) acid damage and the target is {@condition grappled} from the web. All'inizio di ogni turno del bersaglio, fino a quando non è libero, esso subisce altri 9 ({@damage 2d8}) poison damage. Il bersaglio trattenuto o un'altra creatura a portata possono utilizzare un'azione per effettuare una prova di Forza (Atletica) con CD 13. Se la prova viene superata, la ragnatela viene distrutta. La ragnatela può anche essere attaccata e distrutta (CA 13; 5 pf, vulnerabilità ai danni da fuoco; immunità ai danni contundenti, psichici e da veleno)."
+					]
+				},
+				{
+					"name": "Cannibalismo (1/giorno)",
+					"entries": [
+						"L'assassino consuma una porzione di carne umanoide che porta con sé o di un cadavere di umanoide entro 1,5 metri da esso. Quando lo fa, ottiene 10 punti ferita temporanei che permangono per l ora. Fino a quando l'assassino possiede questi punti ferita temporanei, dispone dl vantaggio ai tiri salvezza su Costituzione."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"***Cosa appare***",
+					"ll sorriso cortese di questa piccola donna non",
+					"riesce a celare del tutto i Suoi denti appuntiti,"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://user-images.githubusercontent.com/67844434/87235264-92b76200-c3da-11ea-8995-b788bb05b376.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://user-images.githubusercontent.com/67844434/87235264-92b76200-c3da-11ea-8995-b788bb05b376.png",
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"languageTags": [
+				"TC"
+			],
+			"damageTags": [
+				"A",
+				"I",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"incapacitated"
+			]
+		},
+		{
+			"name": "Okkator Mascherato",
+			"source": "AlexCodex",
+			"page": "386",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 39",
+				"average": 97
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 13,
+			"dex": 18,
+			"con": 16,
+			"int": 10,
+			"wis": 16,
+			"cha": 7,
+			"skill": {
+				"acrobatics": "+7",
+				"perception": "+6",
+				"survival": "+6",
+				"athletics": "+4",
+				"stealth": "+7"
+			},
+			"passive": 16,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"All"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Elusione",
+					"entries": [
+						"Quando l'assassino effettua un tiro salvezza su Destrezza per dimezzare i danni, non subisce invece alcun danno se lo supera, altrimenti subisce metà danni se lo fallisce."
+					]
+				},
+				{
+					"name": "Mente distorta",
+					"entries": [
+						"L'assassino dispone di vantaggio ai tiri salvezza contro incantesimi ed effetti che lo renderebbero affascinato o spaventato. L'assassino supera automaticamente i tiri salvezza su Saggezza se l'incantesimo o effetto funziona solamente sugli umanoidi."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The okkator mascherato's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Psychic Defense",
+					"entries": [
+						"While the okkator mascherato is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+					]
+				},
+				{
+					"name": "Modifiche Corporee da Lottatore",
+					"entries": [
+						"All'okkator sono state tagliate della parti del corpo facilmente afferrabili e gli sono stati aggiunti degli spuntoni per aiutarlo nella lotta. L'okkator dispone di vantaggio alle prove di caratteristica e ai tiri salvezza effettuati per evitare di diventare afferrato o per sfuggire da una lotta.Inoltre può usare gli Spuntoni alle articolazioni con un'azione bonus per attaccare qualsiasi creatura con la quale è in lotta"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mulitattacco",
+					"entries": [
+						"L'assassino okkator fa due attacchi a distanza, oppure due attacchi in mischia: uno con il suo morso e uno con i suoi artigli."
+					]
+				},
+				{
+					"name": "Morso",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Artigli",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}17({@damage 3d8 + 4}) slashing damage. Se il bersaglio è una creatura diventa {@condition grappled} {@dc 14} per sfuggire"
+					]
+				},
+				{
+					"name": "Cerbottana",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 25/100 ft., one target. {@h}4 ({@damage 1+4}) piercing damage.Se il bersaglio è una creatura, deve superare un tiro salvezza su Costituzione con {@dc 15}; se lo fallisce subisce 16 ({@dice 3d10}) danni da veleno, mentre se lo supera subisce la metà di questi danni. Se il danno da veleno riduce il bersaglio a O punti ferita, questo diventa automaticamente stabile ma anche avvelenato per l ora, anche dopo aver recuperato punti ferita. Fino a quando è avvelenato in questo modo, è anche paralizzato."
+					]
+				},
+				{
+					"name": "Cannibalismo (1/giorno)",
+					"entries": [
+						"L'assassino consuma una porzione di carne umanoide che porta con sé o di un cadavere di umanoide entro 1,5 metri da esso. Quando lo fa, ottiene 10 punti ferita temporanei che permangono per l ora. Fino a quando l'assassino possiede questi punti ferita temporanei, dispone dl vantaggio ai tiri salvezza su Costituzione."
+					]
+				},
+				{
+					"name": "Spuntoni alle Articolazioni",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target {@condition grappled} by the okkator. {@h}14 ({@damage 3D6 + 4}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"***Cosa appare***",
+					"ll sorriso cortese di questa piccola donna non",
+					"riesce a celare del tutto i Suoi denti appuntiti,"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://user-images.githubusercontent.com/67844434/87235264-92b76200-c3da-11ea-8995-b788bb05b376.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://user-images.githubusercontent.com/67844434/87235264-92b76200-c3da-11ea-8995-b788bb05b376.png",
+			"traitTags": [
+				"Magic Weapons"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Siren Head",
+			"source": "AlexCodex",
+			"size": "H",
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"humanoid"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d12 + 32",
+				"average": 84
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 19,
+			"dex": 16,
+			"con": 19,
+			"int": 6,
+			"wis": 15,
+			"cha": 10,
+			"save": {
+				"cha": "+3",
+				"str": "+7"
+			},
+			"skill": {
+				"performance": "+6",
+				"deception": "+6",
+				"stealth": "+6"
+			},
+			"senses": [
+				"tremorsense 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical weapon"
+				}
+			],
+			"immune": [
+				"thunder"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Loud sirens",
+					"entries": [
+						"while within 5 ft. of Siren head a creature takes {@dice 1d6} ({@dice 1d12} while {@condition grappled}) thunder damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Siren Head makes 2 claw attacks and then uses its Erratic static or screech."
+					]
+				},
+				{
+					"name": "Screech (5-6)",
+					"entries": [
+						"Each creature within 60 feet of Siren Head that can hear it must make a Constitution saving throw {@dc 16}, taking 14 ({@damage 4d6}) thunder damage and being {@condition stunned} until the end of their next turn on failed cave, or half as much damage on a successful save and not being {@condition stunned}."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}13 ({@damage 3d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Erratic static (5-6)",
+					"entries": [
+						"Each creature within 60 feet of Siren Head that can hear it must make a Constitution saving throw {@dc 15} or be unable to cast concentration spell for the next round and ending any active ones.",
+						"If Any creature within 10 ft of Siren head did not succeeds the saving throw they adds -2 to any attack rolls in the next turn"
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Siren head can take 2 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Siren head regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Awarness",
+					"entries": [
+						"Siren head makes a perception check"
+					]
+				},
+				{
+					"name": "The tree moves! (2 actions)",
+					"entries": [
+						"Siren head moves up to its movement and if is not in light of sight  use {@spell misty step} to teleport withing 5ft adjacent to a tree "
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Appearance",
+					"Almost all images of Siren Head are presented very similarly to each other, featuring Siren Head as a tall, thin, desiccated and dehydrated humanoid with mummified skin and dual sirens on its head. Henderson has confirmed that Siren Head's sirens have the ability of releasing various sounds out of them, such as conversations, white noises and extremely loud sounds which can damage hearing. Siren Head has been presented with differing objects on its head, depending on two known photographs.",
+					"Victims of Siren Head have apparently been found with their “eyes/ear drums/gums/sinuses burst and bleeding”, which ties in with its recent sighting where a majority of the population in a town was found dead in the same way, possibly a victim of Siren Head’s ability to play loud sounds.",
+					"Personality",
+					"Siren Head is a very aggressive, monstrous and skilled predator, which makes it very dangerous. It seems to have some degree of intelligence due to using tactics such as camouflaging within forests and mimicking sounds like voices to hide from and lure its prey. ",
+					"Siren Head is not above fooling people with their friends’ voices and one sighting of it suggests that it also blocks out the screams of it devoured victims with its own sounds, ensuring there is no chance anyone will help them. This is most likely to ensure a successful hunt by confusing and disorienting the prey, though it might also simply be a form of cruelty. Siren Head also sometimes does not consume its victims as seen in the Siren Head, meaning that it possibly kills for sport or other reasons."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://vignette.wikia.nocookie.net/villains/images/b/bc/C87CF443-433D-433D-BF2A-CBF883EED2F1.jpeg/revision/latest?cb=20200427031107"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://vignette.wikia.nocookie.net/villains/images/7/7f/SirenHead.jpg/revision/latest?cb=20190922154531"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://vignette.wikia.nocookie.net/villains/images/d/d0/Sirenhead_facts.jpg/revision/latest?cb=20190922163731"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://vignette.wikia.nocookie.net/villains/images/5/51/Siren_Head_Chicago.ogg/revision/latest?cb=20200419171233"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://vignette.wikia.nocookie.net/villains/images/d/d0/Sirenhead_facts.jpg/revision/latest?cb=20190922163731",
+			"soundClip": {
+				"type": "external",
+				"url": "https://vignette.wikia.nocookie.net/villains/images/5/51/Siren_Head_Chicago.ogg/revision/latest?cb=20200419171233"
+			},
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"T"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Brainstealer Dragon Wyrmling",
+			"shortName": "Dragon",
+			"source": "AlexCodex",
+			"size": "M",
+			"type": {
+				"type": "dragon",
+				"tags": [
+					"aberration"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "8d8 + 16",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 15,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 17,
+			"dex": 10,
+			"con": 15,
+			"int": 14,
+			"wis": 11,
+			"cha": 15,
+			"save": {
+				"dex": "+3",
+				"cha": "+5",
+				"wis": "+3",
+				"int": "+5",
+				"con": "+5"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+3"
+			},
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"acid",
+				"psychic"
+			],
+			"languages": [
+				"Deep Speech",
+				"Draconic",
+				"Undercommon",
+				"telepathy 60 ft."
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting(Psionics).",
+					"headerEntries": [
+						" The brainstealer dragon’s innate spellcasting ability is Intelligence (spell save {@dc 13}). It can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell levitate}"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The dragon has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "tentacles",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) bludgeoning damage, plus 3 ({@damage 1d6}) psychic damage.",
+						"If the target is Medium or smaller, it is {@condition grappled} (escape  {@dc 12}) and must succeed on a  {@dc 12} Intelligence saving throw or be {@condition stunned} until this grapple ends."
+					]
+				},
+				{
+					"name": "Extract Brain.",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one {@condition incapacitated} humanoid {@condition grappled} by the brainstealer dragon. ",
+						"{@h}27 ({@damage 5d10}) piercing damage.",
+						"If this damage reduces the target to 0 hit points, the brainstealer dragon kills the target by extracting and devouring its brain."
+					]
+				},
+				{
+					"name": "Mind Blast (Recharge 5-6).",
+					"entries": [
+						"The brainstealer dragon magically emits psychic energy in a 15 ft. cone. Each creature in that area must succeed on a  {@dc 13} Intelligence saving throw or take {@h}18 ({@damage 4d8}) psychic damage and be {@condition stunned} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"environment": [
+				"underwater"
+			],
+			"fluff": {
+				"entries": [
+					"A brainstealer dragon is created when a mind flayer tadpole is inserted into the brain of a captured dragon, through a process called ceremorphosis. Ceremorphosis usually fails on non-humanoid hosts, meaning brainstealer dragon's are very rare. However, when the process is successful the monster created is a deadly combination- incredible power and intellect... with an insatiable hunger for brains."
+				]
+			},
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Tentacles"
+			],
+			"languageTags": [
+				"DR",
+				"DS",
+				"TP",
+				"U"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"stunned"
+			]
+		},
+		{
+			"name": "Young Brainstealer Dragon",
+			"shortName": "Dragon",
+			"source": "AlexCodex",
+			"size": "M",
+			"type": {
+				"type": "dragon",
+				"tags": [
+					"aberration"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "16d10 + 64",
+				"average": 152
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 20,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 21,
+			"dex": 10,
+			"con": 19,
+			"int": 16,
+			"wis": 13,
+			"cha": 17,
+			"save": {
+				"dex": "+4",
+				"cha": "+7",
+				"wis": "+5",
+				"int": "+7"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+4"
+			},
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 120 ft.,"
+			],
+			"passive": 19,
+			"resist": [
+				"acid",
+				"psychic"
+			],
+			"languages": [
+				"Deep Speech",
+				"Draconic",
+				"Undercommon",
+				"telepathy 120 ft."
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting(Psionics).",
+					"headerEntries": [
+						" The brainstealer dragon’s innate spellcasting ability is Intelligence (spell save {@dc 15}). It can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell detect thoughts}",
+						"{@spell levitate}"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The dragon has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack.",
+					"entries": [
+						"The brainstealer dragon makes three attacks: one with its tentacles and two with its claws."
+					]
+				},
+				{
+					"name": "Tentacles",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 15 ft., one target. {@h}16 ({@damage 2d10 + 5}) bludgeoning damage, plus 5 ({@damage 1d10}) psychic damage.",
+						"If the target is Medium or smaller, it is {@condition grappled} (escape  {@dc 15}) and must succeed on a  {@dc 15} Intelligence saving throw or be {@condition stunned} until this grapple ends."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Extract Brain.",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 15 ft., ",
+						"one {@condition incapacitated} humanoid {@condition grappled} by the brainstealer dragon.",
+						"{@h}55 ({@damage 10d10}) piercing damage.",
+						"If this damage reduces the target to 0 hit points, the brainstealer dragon kills the target by extracting and devouring its brain."
+					]
+				},
+				{
+					"name": "Mind Blast (Recharge 5-6).",
+					"entries": [
+						"The brainstealer dragon magically emits psychic energy in a 30 ft. cone. Each creature in that area must succeed on a  {@dc 18} Intelligence saving throw or take {@h}45 ({@damage 10d8}) psychic damage and be {@condition stunned} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"environment": [
+				"underwater"
+			],
+			"fluff": {
+				"entries": [
+					"A brainstealer dragon is created when a mind flayer tadpole is inserted into the brain of a captured dragon, through a process called ceremorphosis. Ceremorphosis usually fails on non-humanoid hosts, meaning brainstealer dragon's are very rare. However, when the process is successful the monster created is a deadly combination- incredible power and intellect... with an insatiable hunger for brains.",
+					"DESCRIPTION",
+					"Like most illithids and their creations, brainstealer dragons had squid-like heads and brain-devouring maws. They possessed white bloated eyes above the four tentacles drooping from their heads. Their draconic bodies were covered in small purple scales and their wings reduced to fleshy flaps of eldritch skin.",
+					"COMBAT",
+					"The brainstealer's powerful draconic build was aided by its diverse array of mental abilities. Like their illithid kin, they could use a mind blast to mentally debilitate their prey, stunning them for ease of consumption. Then they would commence brain extraction, killing one-headed creatures as they hungrily swallowed their brains.",
+					"Their skin was immune to acid, and grew in resistance to non-magical means of attack as they grew older. The downside to their transformation was that their 'wings' were far less powerful, and so their flight was clumsy and more difficult. All but newborn brainstealers (if they were newborn at the time of their ceremorphosis) were capable of telepathic communication.",
+					"Depending on their stage of development, they had all conventional illithid psionics, capable of detecting thoughts, levitation, shifting between planes, and charming their enemies."
+				]
+			},
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Tentacles"
+			],
+			"languageTags": [
+				"DR",
+				"DS",
+				"TP",
+				"U"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"stunned"
+			]
+		},
+		{
+			"name": "Ironfeather Owlbear",
+			"source": "AlexCodex",
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 105,
+				"formula": "11d10 + 44"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 22,
+			"dex": 12,
+			"con": 18,
+			"int": 3,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Keen Sight and Smell",
+					"entries": [
+						"The owlbear has advantage on Wisdom (Perception) checks that rely on sight or smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The owlbear makes two attacks: one with its beak and one with its claws. It can use its Wing Cleave in place of its claws."
+					]
+				},
+				{
+					"name": "Beak",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Wing Cleave {@recharge 4}",
+					"entries": [
+						"The owlbear unfurls and swipes its swings around, and every creature within 10 feet of it must succeed on a {@dc 17} Dexterity saving throw. On a failed saving throw, a creature takes 17 ({@damage 2d10 + 6}) slashing damage. On a successful save, the creature takes half as much damage."
+					]
+				},
+				{
+					"name": "Ironfeather Spray {@recharge 5}",
+					"entries": [
+						"The owlbear flings razor-sharp feathers in a 30-foot cone. Each creature in that area must succeed on a {@dc 17} Dexterity saving throw, taking 28 ({@damage 4d10 + 6}) slashing damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://digilander.libero.it/landofdeath/Sito_FrontPage/Images/Mostri_Advanced/Orsogufo.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://user-images.githubusercontent.com/67844434/96790970-ec76f180-13f7-11eb-9e48-7b2177f60d5b.png",
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			]
+		},
+		{
+			"name": "Winterclaw Owlbear",
+			"source": "AlexCodex",
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 86,
+				"formula": "9d10 + 36"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 22,
+			"dex": 12,
+			"con": 18,
+			"int": 3,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Aura of Chilling Frost",
+					"entries": [
+						"A creature that starts its turn within 10 feet of the owlbear takes 7 ({@damage 2d6}) cold damage and can't use reactions until the end of the owlbear's next turn."
+					]
+				},
+				{
+					"name": "Keen Sight and Smell",
+					"entries": [
+						"The owlbear has advantage on Wisdom (Perception) checks that rely on sight or smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The owlbear makes two attacks: one with its beak and one with its claws."
+					]
+				},
+				{
+					"name": "Beak",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) piercing damage plus 3 ({@damage 1d6}) cold damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) slashing damage plus 7 ({@damage 2d6}) cold damage."
+					]
+				},
+				{
+					"name": "Cold Breath {@recharge 5}",
+					"entries": [
+						"The owlbear breathes cold in a 15-foot cone. Each creature in that area must succeed on a {@dc 17} Dexterity saving throw, taking 28 ({@damage 8d6}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://user-images.githubusercontent.com/67844434/96790929-d9fcb800-13f7-11eb-99f9-d5e7db6689d5.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://user-images.githubusercontent.com/67844434/96790929-d9fcb800-13f7-11eb-99f9-d5e7db6689d5.png",
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"C",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			]
+		},
+		{
+			"name": "Eater of Hope",
+			"source": "AlexCodex",
+			"page": 220,
+			"size": "L",
+			"type": "fiend",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 90,
+				"formula": "12d10 + 24"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 19,
+			"dex": 17,
+			"con": 14,
+			"int": 12,
+			"wis": 11,
+			"cha": 16,
+			"save": {
+				"con": "+5",
+				"cha": "+6"
+			},
+			"skill": {
+				"deception": "+6",
+				"intimidation": "+6",
+				"persuasion": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"cold",
+				"necrotic"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Insatiable Greed",
+					"entries": [
+						"The eater of hope can sense the presence of gold within 1,000 feet of itself. It can determine which location has the greatest amount of gold and can sense the direction to that site. If the gold is being moved, it knows the direction of the movement. It can't locate gold if any thickness of clay or lead, even a thin sheet, blocks a direct path between it and the gold."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The eater of hope has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The eater of hope makes two attacks with its claws."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Breath of Hopelessness {@recharge 5}",
+					"entries": [
+						"The eater of hope exhales a miasma of Underworld winds in a 30-foot cone. Each creature in that area must make a {@dc 14} Charisma saving throw. On a failed save, the target takes 26 ({@damage 4d12}) necrotic damage and is cursed for 1 minute. While cursed in this way, the target takes an extra 6 ({@damage 1d12}) necrotic damage whenever the eater of hope hits it with an attack. On a successful save, the target takes half as much damage and isn't cursed."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Eater of Hope",
+				"source": "MOT",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"An eater of hope is bitter to the core, resentful of all forms of life and joy. Although these demons can strike down most foes, they prefer to let terror and despair overtake their victims first, letting their victims marinate in fear before the fiend devours them."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MOT/Eater of Hope.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MOT/Eater of Hope.png?v=1.113.6",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			]
+		},
+		{
+			"name": "Giant Shark Bowl",
+			"source": "AlexCodex",
+			"size": "H",
+			"type": "ooze",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				6
+			],
+			"hp": {
+				"average": 172,
+				"formula": "15d12 + 75"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 20
+			},
+			"str": 23,
+			"dex": 3,
+			"con": 20,
+			"int": 1,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 10,
+			"resist": [
+				"acid",
+				"fire",
+				"slashing"
+			],
+			"immune": [
+				"lightning"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"prone"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The giant shark bowl can breathe air and water."
+					]
+				},
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The giant shark bowl has advantage on melee attack rolls against any creature that doesn't have all its hp."
+					]
+				},
+				{
+					"name": "Electrical Charge",
+					"entries": [
+						"When the giant shark bowl is subjected to lightning damage, it takes no damage and instead becomes charged for 1 minute. While charged, its attacks deal an extra 2 ({@damage 1d4}) lightning damage."
+					]
+				},
+				{
+					"name": "Ooze Fish Bowl",
+					"entries": [
+						"The shark bowl takes up its entire space. Other creatures can enter the space, but they are subjected to the bowl's Engulf and have disadvantage on the saving throw. Creatures inside the bowl can be seen but have total cover. A creature within 5 feet of the bowl can take an action to pull a creature out. Doing so requires a successful {@dc 15} Strength check, and the creature making the attempt takes 22 ({@damage 3d10 + 6}) piercing damage. The bowl can hold one Large creature or up to six Medium or smaller creatures inside it at a time."
+					]
+				},
+				{
+					"name": "Symbiotically Bound",
+					"entries": [
+						"The ooze and the giant shark's life forces have been entwined by an arcane force. They share statistics as if they were one monster and can't be separated."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant shark bowl makes two attacks. one with its bite and one with its pseudopod."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}22 ({@damage 3d10 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Pseudopod",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}22 ({@damage 3d10 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Engulf",
+					"entries": [
+						"The giant shark bowl moves up to its speed. While doing so, it can enter Large or smaller creatures' spaces. Whenever the bowl enters a creature's space, the creature must make a {@dc 16} Dexterity saving throw.",
+						"On a successful save, the creature can choose to be pushed 5 feet back or to the side of the bowl. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.",
+						"On a failed save, the bowl enters the creature's space, and the creature takes 22 ({@damage 3d10 + 6}) piercing damage and is engulfed. The engulfed creature can't breathe, is {@condition restrained}, and takes 22 ({@damage 3d10 + 6}) piercing damage at the start of each of the bowl's turns. When the bowl moves, the engulfed creature moves with it.",
+						"An engulfed creature can try to escape by taking an action to make a {@dc 15} Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the bowl."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CCodex/Giantsharkbowl.jpg"
+						}
+					}
+				],
+				"entries": [
+					"{@i }",
+					{
+						"type": "entries",
+						"name": "",
+						"entries": [
+							""
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CCodex/giantsharkbowl_token.png",
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"restrained"
+			]
+		},
+		{
+			"name": "Byakhee",
+			"source": "AlexCodex",
+			"page": 290,
+			"size": "L",
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 36",
+				"average": 102
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"fly": 50,
+				"canHover": false
+			},
+			"str": 17,
+			"dex": 19,
+			"con": 17,
+			"int": 9,
+			"wis": 16,
+			"cha": 8,
+			"skill": {
+				"perception": "+5"
+			},
+			"passive": 15,
+			"immune": [
+				"cold",
+				"psychic",
+				"thunder"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				{
+					"conditionImmune": [],
+					"preNote": "Qualsiasi condizione causata da un effetto di influenza mentale"
+				}
+			],
+			"languages": [
+				"aklo"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Accelerated Star Travel.",
+					"entries": [
+						"The byakhee’s hune organ allows it to survive and fly in space at incredible speeds. Travel times vary, but it can generally arrive within the same solar system in {@dice 3d20} hours, or to another star system within {@dice 3d20} days."
+					]
+				},
+				{
+					"name": "Unbreathing",
+					"entries": [
+						"The byakhee doesn’t need to breathe"
+					]
+				},
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"Magical darkness doesn't impede the byakhee's darkvision."
+					]
+				},
+				{
+					"name": "Unknowable Form.",
+					"entries": [
+						"The byakhee’s form cannot be grasped by sane mortals’ minds. The byakhee is considered lightly obscured by all creatures with Intelligence scores of 3 or higher that are not aberrations, celestials, elementals, fey, fiends, or suffering from some form of insanity or confusion. Attack rolls by affected creatures against the byakhee have disadvantage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mulit-attack",
+					"entries": [
+						"The byakhee makes two attacks: one blood drain and one with its claws"
+					]
+				},
+				{
+					"name": "Blood Drain",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage, and if the target is a Large or smaller creature other than a construct, elemental, or undead, it must succeed on a {@dc 13} Strength saving throw or be {@condition grappled} (escape {@dc 13}). Until this grapple ends, the target is {@condition restrained}, and the byakhee can’t use blood drain again. When the creature begins its turn {@condition grappled} by the byakhee, the creature loses 8 ({@damage 1d8 + 4}) necrotic damage from blood loss."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage and if the target is a Large or smaller creature, it must succeed on a {@dc 13} Strength saving throw or be {@condition grappled} (escape {@dc 13}). Until this grapple ends, the target is {@condition restrained}, and the byakhee can’t claw another target. When the creature begins its turn {@condition grappled} by the byakhee, the creature loses 8 ({@damage 1d8 + 4}) necrotic damage from blood loss damage."
+					]
+				},
+				{
+					"name": "Shriek (1/day)",
+					"entries": [
+						"The byakhee issues a horrific shriek that penetrates both space and time. At the end of the byakhee’s turn, another byakhee is called from another place and time, appearing within 5 feet of the shrieking byakhee. It rolls initiative immediately and takes its own turns. The newly arrived byakhee cannot shriek when called this way. The called byakhee returns from whence it came after 24 hours or when it is reduced to 0 hit points."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"A byakhee’s bloated abdomen contains the byakhee’s hune organ, which enables it to fly through space at faster-than-light speed. It also allows the creature to issue a shriek that reverberates across vast distances and even backward in time to arrange for allies to arrive almost instantly. Byahkee are commonly summoned to serve as spacefaring steeds for cults of Great Old Ones and Outer Gods. In combat, a byakhee summons an ally and then relies on its claws and proboscis to drain blood from its foes. It cannot be injured by extreme cold or thunder attacks, and its wholly alien mind renders it immune to mind-affecting effects.",
+					"COSA SI VEDE",
+					"This flying organism resembles an",
+					"arthropod with a bloated abdomen.",
+					"It has huge claws, wings, and an",
+					"insectoid head."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://user-images.githubusercontent.com/67844434/102658779-877e1480-4178-11eb-8295-767c71958136.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://user-images.githubusercontent.com/67844434/102658779-877e1480-4178-11eb-8295-767c71958136.png",
+			"traitTags": [
+				"Devil's Sight"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		}
+	]
+}
